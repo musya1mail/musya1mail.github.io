@@ -1,77 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8">
-    <title>太郎のポートフォリオサイト</title>
-    <link rel="icon" href="favicon.ico">
-    <meta name="description" content="太郎のポートフォリオサイトです">
-    <!-- <style>
-      h1{
-        color:red;
-      }
-    </style> -->
-
-    <link rel="stylesheet" href="css/styles.css">
+      <meta charset="utf-8">
+      <title>JavaScipt Practice</title>
+      <style>
+        .box{
+          width: 100px;
+          height: 100px;
+          background-color: skyblue;
+          cursor: pointer;
+        }
+      </style>
   </head>
-    <body>
-      <header>
-        
-        <div class="container">
-          <div class="icon">
+  <body>
+    <div class="box" id="target"></div>
 
-            <img src="img/taro.png" width="120" height="120" alt="太郎のアイコンです">
-            
-          </div>
-
-          <div class="info">
-            <h1>山田太郎</h1>
-            <p>UI/UXデザイナー見習いです</p>
-            <ul>
-            <li>
-              <a href="http://yahoo.co.jp" target="_blank">
     
-                <img src="img/blog.png" width="20" height="20" alt="ブログサイトへのリンク画像です"
-               
-              </a>
-            </li>
-    
-            <li>
-    
-              <a href="http://www.yahoo.co.jp" target="_blank">
-                
-                <img src="img/photos.png" width="20" height="20" alt="写真サイトへのリンク画像です"
-            
-              </a>
-            </li>
-            
-            </ul>
-          </div>
-        </div>
-      </header>
+    <script>
+      'use strict';
 
-      
-      <section>
-        
-        <!-- 作品紹介 -->
-        <section class="works">
-      
-         <h1>WORKS</h1>
+      document.getElementById('target').addEventListener('click',() => {
+        document.getElementById('target').style.background = "pink";
+        document.getElementById('target').style.borderRadius = '50%';
+      });
 
-         <section>
-
-           <img src="img/work1.png" width="400" height="400" height="260" alt="勇者ゲームの紹介画像">
-           <h1>勇者ゲーム</h1>
-           <p>楽しいアプリです。</p>
-         </section>
-         </section>
-
-
-      </section>
-
-      <footer>
-
-        <p>(c)dotinstall.com</p>
-
-      </footer>
-    </body>
+    </script>
+  </body>
 </html>
